@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(114, 234, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(114, 250, 196);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(lightblue,royalblue);
+    
+}
