@@ -13,13 +13,25 @@ const App = () => {
 
   const [realData, setRealData] = useState(data)
   // state jaha banti hai wahi modify ki jaa skti hai
+
+  const handleFriendsButton = (cardindex)=>{
+    setRealData((previous)=>{
+      return previous.map((item, index)=>{
+        if(index === cardindex){
+          return {...item, friends: !item.friends}
+        }
+        return item;
+      })
+    })
+  }
+
   return (
     <>
     <div className='w-full h-screen bg-zinc-300 flex gap-4 items-center justify-center'>
       {realData.map((item, index)=>(
         // <Card image={item.image} name={item.name} profession={item.profession}/>
         
-        <Card key={index} values={item} />
+        <Card key={index} index={index} handleClick={handleFriendsButton} values={item} />
       ))}
     </div>
     </>
