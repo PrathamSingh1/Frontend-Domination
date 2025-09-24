@@ -13,4 +13,12 @@ html, body {
 
 body{
   background-color: #111;
+  padding: 50px;
+}
+
+.box {
+  background-color: crimson;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
 }
