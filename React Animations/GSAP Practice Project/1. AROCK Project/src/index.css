@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: Monument;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+span {
+    display: inline-block;
+}
